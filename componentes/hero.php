@@ -1,3 +1,11 @@
+<?php 
+    $itens = [
+        ['href' => 'https://instagram.com/hinterholz_kerlon?igshid=OGQ5ZDc2ODk2ZA==', 'src' => './assets/instagram.png', 'alt' => 'Instagram'],
+        ['href' => 'https://wa.me/55996560626', 'src' => './assets/whatsapp.png', 'alt' => 'Whatsapp'],
+        ['href' => 'https://github.com/kerlonlh', 'src' => './assets/github.png', 'alt' => 'Github'],
+        ['href' => 'https://www.linkedin.com/in/kerlon-leonardi-hinterholz-958872285/', 'src' => './assets/linkedin.png', 'alt' => 'Linkedin'],
+    ];  
+?>
 <section class="flex gap-x-3">
     <div class="w-2/3">
         <h1 class="text-3xl font-bold">Oi, meu nome é Kerlon!</h1>
@@ -9,14 +17,13 @@
             XAMPP.
         </p>
         <ul class="flex gap-x-3 mt-3">
-            <li><a href="https://instagram.com/hinterholz_kerlon?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img
-                        class="h-8 hover:animate-bounce" src="./assets/instagram.png" alt="Facebook"></a></li>
-            <li><a href="https://wa.me/55996560626" target="_blank"><img class="h-8 hover:animate-bounce"
-                        src="./assets/whatsapp.png" alt="Whatsapp"></a></li>
-            <li><a href="https://github.com/kerlonlh" target="_blank"><img class="h-8 hover:animate-bounce"
-                        src="./assets/github.png" alt="Github"></a></li>
-            <li><a href="https://www.linkedin.com/in/kerlon-leonardi-hinterholz-958872285/" target="_blank"><img
-                        class="h-8 hover:animate-bounce" src="./assets/linkedin.png" alt="Linkedin"></a></li>
+            <?php foreach($itens as $item): ?>
+                <li>
+                    <a href="<?=$item['href']?>" target="_blank">
+                        <img class="h-8 hover:animate-bounce" src="<?=$item['src']?>" alt="<?=$item['alt']?>">
+                    </a>
+                </li>
+            <?php endforeach ?>
         </ul>
     </div>
     <div class="w-1/3 flex items-right justify-end">
