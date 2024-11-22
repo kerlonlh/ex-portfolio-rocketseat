@@ -8,100 +8,22 @@
     <link rel="shortcut icon" href="./assets/avatar.svg" type="image/x-icon">
 </head>
 <body class="bg-slate-900 text-white">
-    <header class="mx-auto max-w-screen-lg px-3 py-6 flex justify-between">
-        <div class="font-bold text-xl text-cyan-600">
-            🐧 Meu Portfolio ...
-        </div>
-        <div>
-            <ul class="flex gap-x-3 font-medium text-gray-200">
-                <li><a href="#projetos" class="hover:underline">Projetos</a></li>
-                <li><a href="https://github.com/kerlonlh" target="_blank" class="hover:underline">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/kerlon-leonardi-hinterholz-958872285/" target="_blank" class="hover:underline">Linkedin</a></li>
-            </ul>
-        </div>
-    </header>
+    <?php include('./componentes/header.php'); ?>
+
     <main class="mx-auto max-w-screen-lg min-h-20 px-3 py-3">
         <!--  Hero-->
-        <section class="flex gap-x-3">
-            <div class="w-2/3">
-                <h1 class="text-3xl font-bold">Oi, meu nome é Kerlon!</h1>
-                <p class="text-xl leading-6 mt-6">
-                    Falando um pouco sobre mim, sou um desenvolvedor web que adora criar soluções novas para problemas do mundo real focando na esperiencia do usuário.
-                    Atualmente, trabalho como Técnico de apoio ao usuário de informática (Service Desk), mas também possuo conhecimento na area de desenvolvimento, como PHP, HTML, CSS, JavaScript, e na área de Bando de Dados, SQL, XAMPP.
-                </p>
-                <ul class="flex gap-x-3 mt-3">
-                    <li><a href="https://instagram.com/hinterholz_kerlon?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/instagram.png" alt="Facebook"></a></li>
-                    <li><a href="https://wa.me/55996560626" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/whatsapp.png" alt="Whatsapp"></a></li>
-                    <li><a href="https://github.com/kerlonlh" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/github.png" alt="Github"></a></li>
-                    <li><a href="https://www.linkedin.com/in/kerlon-leonardi-hinterholz-958872285/" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/linkedin.png" alt="Linkedin"></a></li>
-                </ul>   
-            </div>
-            <div class="w-1/3 flex items-right justify-end">
-                <div>
-                    <img src="./assets/foto_perfil.jpg" class="h-56 rounded hover:animate-pulse" alt="Foto Kerlon Hinterholz">
-                </div>
-            </div>
-        </section>
+        <?php include('./componentes/hero.php'); ?>
         <!-- Projetos -->
          <section class="space-y-3 py-6">
             <h2 class="text-2xl font-bold" id="projetos">Meus projetos</h2>
             <!-- projeto -->
-            <div class="bg-slate-800 rounded-lg p-3 flex items-center">
-                <div class="w-1/5">foto</div>
-                <div class="w-4/5 space-y-3">
-                    <div class="flex gap-3 justify-between">
-                        <h3 class="font-semibold text-xl">✅ Projeto 1 <span class="text-xs text-gray-400 opacity-50 italic"> (finalizado em 2024)</span></h3>
-                        <div>
-                            <span class="bg-fuchsia-400 rounded-md px-2 py-1 font-semibold text-xs text-fuchsia-900">PHP</span>
-                            <span class="bg-lime-400 rounded-md px-2 py-1 font-semibold text-xs text-lime-900">JavaScript</span>
-                            <span class="bg-sky-400 rounded-md px-2 py-1 font-semibold text-xs text-sky-900">HTML</span>
-                            <span class="bg-rose-400 rounded-md px-2 py-1 font-semibold text-xs text-rose-900">CSS</span>
-                        </div>
-                    </div>
-                    <p class="leading-6">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam necessitatibus unde facere consequuntur voluptas quasi! Ex, veritatis quis? Aliquid officia accusantium reiciendis laudantium nesciunt deleniti voluptatibus sequi illo dolorum et.
-                        </p>
-                </div>
-            </div>
-            <div class="bg-slate-800 rounded-lg p-3 flex items-center">
-                <div class="w-1/5">foto</div>
-                <div class="w-4/5 space-y-3">
-                    <div class="flex gap-3 justify-between">
-                        <h3 class="font-semibold text-xl">✅ Projeto 2 <span class="text-xs text-gray-400 opacity-50 italic"> (finalizado em 2024)</span></h3>
-                        <div>
-                            <span class="bg-fuchsia-400 rounded-md px-2 py-1 font-semibold text-xs text-fuchsia-900">PHP</span>
-                            <span class="bg-lime-400 rounded-md px-2 py-1 font-semibold text-xs text-lime-900">JavaScript</span>
-                            <span class="bg-sky-400 rounded-md px-2 py-1 font-semibold text-xs text-sky-900">HTML</span>
-                            <span class="bg-rose-400 rounded-md px-2 py-1 font-semibold text-xs text-rose-900">CSS</span>
-                        </div>
-                    </div>
-                    <p class="leading-6">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam necessitatibus unde facere consequuntur voluptas quasi! Ex, veritatis quis? Aliquid officia accusantium reiciendis laudantium nesciunt deleniti voluptatibus sequi illo dolorum et.
-                        </p>
-                </div>
-            </div>
-            <div class="bg-slate-800 rounded-lg p-3 flex items-center">
-                <div class="w-1/5">foto</div>
-                <div class="w-4/5 space-y-3">
-                    <div class="flex gap-3 justify-between">
-                        <h3 class="font-semibold text-xl">✅ Projeto 3 <span class="text-xs text-gray-400 opacity-50 italic"> (finalizado em 2024)</span></h3>
-                        <div>
-                            <span class="bg-fuchsia-400 rounded-md px-2 py-1 font-semibold text-xs text-fuchsia-900">PHP</span>
-                            <span class="bg-lime-400 rounded-md px-2 py-1 font-semibold text-xs text-lime-900">JavaScript</span>
-                            <span class="bg-sky-400 rounded-md px-2 py-1 font-semibold text-xs text-sky-900">HTML</span>
-                            <span class="bg-rose-400 rounded-md px-2 py-1 font-semibold text-xs text-rose-900">CSS</span>
-                        </div>
-                    </div>
-                    <p class="leading-6">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam necessitatibus unde facere consequuntur voluptas quasi! Ex, veritatis quis? Aliquid officia accusantium reiciendis laudantium nesciunt deleniti voluptatibus sequi illo dolorum et.
-                        </p>
-                </div>
-            </div>
+            <?php include('./componentes/projetos.php'); ?>
+            
          </section>
     </main>
     <footer class="mx-auto max-w-screen-lg min-h-20">
         <div class="border-t border-gray-600 pt-6 px-3 text-gray-400 text-sm">
-            @ Copyright 2024. Kerlon Hinterholz.
+            @ Copyright <?=date('Y') ?>. Kerlon Hinterholz.
         </div>
     </footer>
 </body>
