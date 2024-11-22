@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/avatar.svg" type="image/x-icon">
 </head>
 <body class="bg-slate-900 text-white">
     <header class="mx-auto max-w-screen-lg px-3 py-6 flex justify-between">
@@ -13,9 +14,9 @@
         </div>
         <div>
             <ul class="flex gap-x-3 font-medium text-gray-200">
-                <li><a href="" class="hover:underline">Projetos</a></li>
-                <li><a href="" class="hover:underline">Github</a></li>
-                <li><a href="" class="hover:underline">Linkedin</a></li>
+                <li><a href="#projetos" class="hover:underline">Projetos</a></li>
+                <li><a href="https://github.com/kerlonlh" target="_blank" class="hover:underline">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/kerlon-leonardi-hinterholz-958872285/" target="_blank" class="hover:underline">Linkedin</a></li>
             </ul>
         </div>
     </header>
@@ -29,21 +30,21 @@
                     Atualmente, trabalho como Técnico de apoio ao usuário de informática (Service Desk), mas também possuo conhecimento na area de desenvolvimento, como PHP, HTML, CSS, JavaScript, e na área de Bando de Dados, SQL, XAMPP.
                 </p>
                 <ul class="flex gap-x-3 mt-3">
-                    <li><a href=""><img src="./assets/facebook.png" alt="Facebook"></a></li>
-                    <li><a href=""><img src="./assets/whatsapp.png" alt="Whatsapp"></a></li>
-                    <li><a href=""><img src="./assets/github.png" alt="Github"></a></li>
-                    <li><a href=""><img src="./assets/linkedin.png" alt="Linkedin"></a></li>
-                </ul>
+                    <li><a href="https://instagram.com/hinterholz_kerlon?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/instagram.png" alt="Facebook"></a></li>
+                    <li><a href="https://wa.me/55996560626" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/whatsapp.png" alt="Whatsapp"></a></li>
+                    <li><a href="https://github.com/kerlonlh" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/github.png" alt="Github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/kerlon-leonardi-hinterholz-958872285/" target="_blank"><img class="h-8 hover:animate-bounce" src="./assets/linkedin.png" alt="Linkedin"></a></li>
+                </ul>   
             </div>
-            <div class="w-1/3 flex items-center justify-center">
+            <div class="w-1/3 flex items-right justify-end">
                 <div>
-                    foto
+                    <img src="./assets/foto_perfil.jpg" class="h-56 rounded hover:animate-pulse" alt="Foto Kerlon Hinterholz">
                 </div>
             </div>
         </section>
         <!-- Projetos -->
          <section class="space-y-3 py-6">
-            <h2 class="text-2xl font-bold">Meus projetos</h2>
+            <h2 class="text-2xl font-bold" id="projetos">Meus projetos</h2>
             <!-- projeto -->
             <div class="bg-slate-800 rounded-lg p-3 flex items-center">
                 <div class="w-1/5">foto</div>
