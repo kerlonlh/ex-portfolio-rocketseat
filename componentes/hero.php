@@ -18,11 +18,11 @@
         </p>
         <ul class="flex gap-x-3 mt-3">
             <?php foreach($itens as $item): ?>
-                <li>
-                    <a href="<?=$item['href']?>" target="_blank">
-                        <img class="h-8 hover:animate-bounce" src="<?=$item['src']?>" alt="<?=$item['alt']?>">
-                    </a>
-                </li>
+            <li>
+                <a href="<?=$item['href']?>" target="_blank">
+                    <img class="h-8 hover:animate-bounce" src="<?=$item['src']?>" alt="<?=$item['alt']?>">
+                </a>
+            </li>
             <?php endforeach ?>
         </ul>
     </div>
